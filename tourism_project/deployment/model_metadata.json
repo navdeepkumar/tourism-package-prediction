@@ -1,0 +1,40 @@
+{
+  "model": "XGBClassifier (scikit-learn pipeline)",
+  "trained_at_utc": "2026-10-31T21:18:05+00:00",
+  "mlflow_run_id": "4738007b918d4035be686d7190516e4f",
+  "best_params": {
+    "colsample_bytree": 0.7,
+    "learning_rate": 0.1,
+    "max_depth": 7,
+    "n_estimators": 200,
+    "subsample": 0.8
+  },
+  "best_cv_f1": 0.7804,
+  "test_metrics": {
+    "accuracy": 0.9352,
+    "precision": 0.8601,
+    "recall": 0.7935,
+    "f1": 0.8255,
+    "roc_auc": 0.9573
+  },
+  "features": [
+    "Age",
+    "TypeofContact",
+    "CityTier",
+    "DurationOfPitch",
+    "Occupation",
+    "Gender",
+    "NumberOfPersonVisiting",
+    "NumberOfFollowups",
+    "ProductPitched",
+    "PreferredPropertyStar",
+    "MaritalStatus",
+    "NumberOfTrips",
+    "Passport",
+    "PitchSatisfactionScore",
+    "OwnCar",
+    "NumberOfChildrenVisiting",
+    "Designation",
+    "MonthlyIncome"
+  ]
+}
