@@ -10,7 +10,7 @@ APP_DIR = Path(__file__).parent
 MODEL_PATH = APP_DIR / "best_model.joblib"
 METADATA_PATH = APP_DIR / "model_metadata.json"
 
-st.set_page_config(page_title="Wellness Package Purchase Predictor", page_icon="🧳", layout="wide")
+st.set_page_config(page_title="Wellness Package Purchase Predictor", layout="wide")
 
 
 @st.cache_resource
@@ -19,7 +19,7 @@ def load_model():
     return joblib.load(MODEL_PATH)
 
 
-st.title("🧳 Visit with Us - Wellness Tourism Package Predictor")
+st.title("Visit with Us - Wellness Tourism Package Predictor")
 st.write(
     "Enter the customer's details to predict whether they are likely to purchase the "
     "**Wellness Tourism Package** before the sales team contacts them."
@@ -91,10 +91,10 @@ if st.button("Predict purchase", type="primary", key="predict"):
     prediction = int(model.predict(input_df)[0])
     probability = float(model.predict_proba(input_df)[0, 1])
     if prediction == 1:
-        st.success(f"✅ Likely to purchase the Wellness Tourism Package (probability {probability:.1%}).")
+        st.success(f"Likely to purchase the Wellness Tourism Package (probability {probability:.1%}).")
         st.write("Recommendation: prioritise this customer for a personalised pitch and timely follow-ups.")
     else:
-        st.warning(f"❌ Unlikely to purchase the Wellness Tourism Package (probability {probability:.1%}).")
+        st.warning(f"Unlikely to purchase the Wellness Tourism Package (probability {probability:.1%}).")
         st.write("Recommendation: keep in nurture campaigns rather than an immediate sales call.")
 
 if METADATA_PATH.exists():
