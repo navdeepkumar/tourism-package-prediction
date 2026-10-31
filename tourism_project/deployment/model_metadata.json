@@ -1,7 +1,7 @@
 {
   "model": "XGBClassifier (scikit-learn pipeline)",
-  "trained_at_utc": "2026-10-31T21:18:05+00:00",
-  "mlflow_run_id": "4738007b918d4035be686d7190516e4f",
+  "trained_at_utc": "2026-10-31T22:02:43+00:00",
+  "mlflow_run_id": "2ecd68b11589474e9e496608d1c5024e",
   "best_params": {
     "colsample_bytree": 0.7,
     "learning_rate": 0.1,
