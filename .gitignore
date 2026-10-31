@@ -1,0 +1,10 @@
+# Local artefacts that should never be committed
+.env
+mlruns/
+mlartifacts/
+__pycache__/
+*.pyc
+Xtrain.csv
+Xtest.csv
+ytrain.csv
+ytest.csv

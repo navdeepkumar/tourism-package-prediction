@@ -1,0 +1,8 @@
+# Dependencies for the Streamlit Community Cloud app (Python 3.11).
+# Versions match the training pipeline so the joblib model loads correctly.
+streamlit==1.44.1
+pandas==2.2.3
+numpy==2.0.2
+scikit-learn==1.6.1
+xgboost==2.1.4
+joblib==1.4.2
